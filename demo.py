@@ -15,7 +15,7 @@ def main(p1,p2):
         os.makedirs("temp",exist_ok=True)
         with open("temp/sample.txt","w") as f:
             f.write(time.asctime())
-        mlflow.log_artifact("temp") 
+        mlflow.log_artifacts("temp") 
         
 if __name__=='__main__':
     args=argparse.ArgumentParser()
